@@ -57,6 +57,7 @@
     padding-bottom: 32px;
     flex-direction: column;
     gap: 32px;
+    overflow-x: hidden;
   }
 
   .about__txt {
@@ -112,6 +113,10 @@
   }
 
   /* Services */
+  .services {
+    overflow-x: hidden;
+  }
+
   .services__inner {
     padding-bottom: 64px;
   }
@@ -149,8 +154,8 @@
 
   /* Partners */
   .partners-carousel__navs {
-    left: -20px;
-    right: -20px;
+    left: 0;
+    right: 0;
   }
 
   /* Consultation */
