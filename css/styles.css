@@ -186,6 +186,7 @@ picture {
 
 /* ------------ About ------------ */
 .about__inner {
+  position: relative;
   gap: 60px;
   padding-top: 80px;
   padding-bottom: 40px;
@@ -196,12 +197,25 @@ picture {
   padding-right: 16px;
 }
 
+.about__txt-branch {
+  display: none;
+  position: absolute;
+  width: 162px;
+  top: -52px;
+  right: -69px;
+  transform: rotate(16deg);
+}
+
 .about__us-title {
   margin-bottom: 16px;
 }
 
 .about__us-desc strong {
   color: var(--main-color);
+}
+
+.about__activity--mobile {
+  display: none;
 }
 
 .about__activity-title {
@@ -224,7 +238,7 @@ picture {
   background-size: cover;
 }
 
-.about__branch {
+.about__image-branch {
   position: absolute;
   right: -68px;
   z-index: -1;
@@ -312,6 +326,7 @@ picture {
 .services__item:hover {
   background-color: var(--main-color);
   color: white;
+  box-shadow: 0px 2px 8px rgb(0 130 74 / 39%), 0px 10px 32px rgb(0 130 74 / 20%);
 }
 
 .services__item-icon-container {
@@ -356,6 +371,7 @@ picture {
   bottom: -55px;
   transform: rotate(61deg);
 }
+
 /* ------------ /end Services ------------ */
 
 
@@ -405,6 +421,7 @@ picture {
   border: none;
   background-color: transparent;
 }
+
 /* ------------ /end Partners ------------ */
 
 
@@ -433,6 +450,14 @@ picture {
 .consulation__box {
   padding: 48px 98px;
   background-color: var(--background-color);
+}
+
+.consulation__box-image {
+  display: none;
+  position: absolute;
+  top: -30px;
+  width: 320px;
+  left: 32px;
 }
 
 .consulation__title {
@@ -500,12 +525,13 @@ picture {
   right: 116px;
   bottom: -95px;
 }
+
 /* ------------ /end Consulation ------------ */
 
 
 /* ------------ Location ------------ */
 .location__txt {
-  
+
   flex-direction: column;
 }
 
@@ -566,7 +592,7 @@ picture {
   transition: 0.3s;
 }
 
-.scroll-top:hover .scroll-top__icon-container { 
+.scroll-top:hover .scroll-top__icon-container {
   background-color: var(--secondary-color);
   box-shadow: 0px 2px 8px rgb(235 38 41 / 39%), 0px 10px 32px rgb(235 38 41 / 20%);
 }
@@ -574,6 +600,7 @@ picture {
 .scroll-top__txt {
   line-height: 1.5;
 }
+
 /* ------------ /end Location ------------ */
 
 
@@ -609,4 +636,5 @@ picture {
 .footer__contacts .main-box:hover .main-box__icon-container {
   background-color: var(--secondary-color);
 }
+
 /* ------------ /end Footer ------------ */
