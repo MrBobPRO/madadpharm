@@ -57,7 +57,7 @@
     padding-bottom: 32px;
     flex-direction: column;
     gap: 32px;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .about__txt {
@@ -113,12 +113,8 @@
   }
 
   /* Services */
-  .services {
-    overflow-x: hidden;
-  }
-
   .services__inner {
-    padding-bottom: 64px;
+    padding-bottom: 48px;
   }
 
   .services__list {
@@ -146,10 +142,7 @@
   }
 
   .services__branch {
-    transform: rotate(15deg);
-    width: 152px;
-    bottom: -52px;
-    right: -65px;
+    display: none;
   }
 
   /* Partners */
