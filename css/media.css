@@ -151,6 +151,21 @@
     right: 0;
   }
 
+  .partners__desc-container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .more-button {
+    margin-left: auto;
+  }
+
+  /* Partners page */
+  .partners-list__item {
+    width: 100%;
+    padding: 20px;
+  }
+
   /* Consultation */
   .consulation__inner {
     padding-top: 240px;
@@ -188,7 +203,7 @@
   .consulation__title br {
     display: none;
   }
-  
+
   .consulation__form {
     flex-direction: column;
   }

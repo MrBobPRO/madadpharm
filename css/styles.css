@@ -115,6 +115,20 @@ picture {
   margin: 0;
 }
 
+.more-button {
+  display: flex;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text-color);
+  align-items: center;
+  font-weight: 600;
+}
+
+.more-button strong {
+  font-family: cursive;
+  font-size: 24px;
+  font-weight: 400;
+}
 /* ------------ /end Main styles ------------ */
 
 
@@ -385,8 +399,14 @@ picture {
   margin-bottom: 16px;
 }
 
-.partners__desc {
+.partners__desc-container {
   margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: self-end;
+}
+
+.partners__desc {
   max-width: 450px;
 }
 
@@ -403,7 +423,7 @@ picture {
   padding: 24px 60px;
   border-radius: 8px;
   background-color: white;
-  padding: 40px 20px;
+  padding: 40px 32px;
 }
 
 .partners-carousel__navs {
@@ -420,6 +440,26 @@ picture {
 .carousel-navs__item {
   border: none;
   background-color: transparent;
+}
+
+/* Partners page */
+.partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 0;
+}
+
+.partners-list__item {
+  width: calc(25% - 25px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  border-radius: 8px;
+  background-color: white;
 }
 
 /* ------------ /end Partners ------------ */
